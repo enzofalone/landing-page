@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: #1F2937;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 20px;
+    background: var(--main-bg-color);
+}
+
+.nav-bar-left {
+    flex: 1;
+    flex-basis: 100%;
+}
+
+.nav-bar-right {
+    flex-basis: 100%;
+    text-align: right;
+}
+
+.nav-bar-right a {
+    margin-left: 10px;
+}
+
+.section-hero {
+    padding: 30px;
+    background: var(--main-bg-color);
+    flex: 1;
+}
+
+.section-information {
+    padding: 30px;
+    background-color: red;
+}
+
+.section-contact {
+
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+
+    background: var(--main-bg-color);
+}
