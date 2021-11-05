@@ -26,7 +26,14 @@
 .nav-bar a {
     text-decoration: none;
     color: #E5E7EB;
-    
+    transition: all 350ms;
+}
+
+.nav-bar a, #logo{
+transition: color 350ms;
+}
+.nav-bar a:hover, #logo:hover {
+    color: #e5e7eb93;
 }
 
 #logo {
@@ -68,7 +75,7 @@
 }
 
 .hero-container {
-
+    padding: 3% 0;
     display: flex;
     flex-direction: row;
 }
@@ -119,7 +126,8 @@
 /*information section*/
 
 .information-container {
-    margin: 0 15rem;
+    padding: 3% 0;
+    
 }
 
 .information-header h1 {
@@ -137,6 +145,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 18%;
+    
 }
 
 .information-element {
@@ -154,8 +163,6 @@
     width: 150px;
     height: 150px;
     overflow: hidden;
-
-    
 }
 
 .information-illustration img{
@@ -174,4 +181,87 @@ footer {
     color: #E5E7EB;
     text-align: center;
     margin: 0;
+    padding: 1%;
+}
+
+/*quote section*/
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote-container {
+    margin: 0 15rem;
+    padding: 3% 0;
+}
+
+.quote-container p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0 18%;
+}
+
+.quote-container h3 {
+    text-align: right;
+    margin: 0 18%;
+}
+
+/*contact section*/
+.contact {
+    margin: 3% 0;
+}
+
+.contact-container {
+    background-color: #3882F6;
+    border-radius: 5px;
+    
+    display:flex;
+    flex-direction: row;
+}
+
+.contact-section {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 3% 0;
+}
+
+.contact-section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-basis: 1px;
+}
+
+.contact-section h3,.contact-section p {
+    margin: 0 26%;
+    color: #F9FAF8;
+    font-size: 24px;
+}
+.contact-section p {
+    color: #E5E7EB;
+    font-size: 16px;
+}
+
+.contact-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #F9FAF8;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* General Animations */
+.button {
+    transition: background 350ms;
+}
+
+.button:hover {
+    background-color: #141b24;
+    cursor: pointer;
 }
