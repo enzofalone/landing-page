@@ -2,4 +2,4 @@
 
 Landing page with a layout and palette inspired by The Odin Project!
 
-<img src="//imgur.com/a/rLFkKBJ" alt="a" width="800"/>
+[https://enzofalone.github.io/landing-page/](Live Preview)
